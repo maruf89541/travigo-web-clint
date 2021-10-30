@@ -7,6 +7,9 @@ import Services from './components/Home/Services/Services';
 import Login from './components/Home/Login/Login';
 import AuthProvider from './Contexts/AuthProvider';
 import Detailes from './components/Home/Detailes/Detailes';
+import AddService from './components/Home/AddService';
+import MyBooking from './components/Home/MyBooking/MyBooking';
+import ADashBoard from './components/Home/AdminDashBoard/ADashBoard';
 
 function App() {
   return (
@@ -24,6 +27,16 @@ function App() {
             </Route>
             <Route path="/detailes/:serviceId">
               <Detailes></Detailes>
+            </Route>
+            <Route path="/addService">
+              <AddService></AddService>
+
+            </Route>
+            <Route path="/myBooking">
+              <MyBooking></MyBooking>
+            </Route>
+            <Route path="/aDashBoard">
+              <ADashBoard></ADashBoard>
             </Route>
           </Switch>
         </BrowserRouter>

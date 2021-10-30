@@ -38,7 +38,7 @@ const Detailes = () => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6 p-5"><img className="img-fluid" src={singleServiceDetailes?.img} alt=""></img></div>
-                <div className="col-lg-6 p-5  mt-5">
+                <div className="col-lg-6 p-5 ">
                     <div className="add-service">
                         <h1>Add your service</h1>
                         <form onSubmit={handleSubmit(onSubmit)}>
