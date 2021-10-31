@@ -36,7 +36,7 @@ const AddService = () => {
                         <input type="number" {...register("price")} placeholder="Price" class="form-control" id="floatingPassword" />
                         <label for="floatingPassword">Password</label>
                     </div> */}
-                    <input {...register("Name", { required: true, maxLength: 20 })} placeholder="Name" />
+                    <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
                     <textarea {...register("description")} placeholder="description" />
                     <input type="number" {...register("price")} placeholder="Price" />
                     <input {...register("day")} placeholder="Day" />

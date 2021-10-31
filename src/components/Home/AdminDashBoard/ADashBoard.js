@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Nav } from 'react-bootstrap';
 import AddService from '../AddService';
+import ManageAllBooking from '../ManageAllBooking/ManageAllBooking';
 import MyBooking from '../MyBooking/MyBooking';
 
 const ADashBoard = () => {
@@ -13,16 +14,16 @@ const ADashBoard = () => {
                     <Nav.Link onClick={() => setControl("allBooking")}>Manage all Booking</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link onClick={() => setControl("allVolunteers")}>All services</Nav.Link>
+                    <Nav.Link onClick={() => setControl("allEvents")}>All services</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link onClick={() => setControl("allEvents")}>Add new service</Nav.Link>
+                    <Nav.Link onClick={() => setControl("addService")}>Add new service</Nav.Link>
                 </Nav.Item>
             </Nav>
             <div className="col text-center  text-center">
-                {control === "allBooking" && <AddService></AddService>}
+                {control === "allBooking" && <ManageAllBooking></ManageAllBooking>}
                 {control === "allEvents" && <MyBooking></MyBooking>}
-                {/* {control === "addEvents" && <AddEvents></AddEvents>} */}
+                {control === "addService" && <AddService></AddService>}
             </div>
         </div >
     );

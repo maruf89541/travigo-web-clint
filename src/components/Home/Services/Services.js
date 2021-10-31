@@ -9,8 +9,8 @@ const Services = () => {
             .then(data => setServices(data))
     }, [])
     return (
-        <div className="container">
-            <div className="row gy-3">
+        <div className="container" >
+            <div className="row gy-3 " >
                 {
 
                     services?.map(service => <Service

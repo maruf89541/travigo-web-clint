@@ -5,32 +5,32 @@ import Banner from './components/Home/Banner/Banner';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Services from './components/Home/Services/Services';
 import Login from './components/Home/Login/Login';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AuthProvider from './Contexts/AuthProvider';
 import Detailes from './components/Home/Detailes/Detailes';
 import AddService from './components/Home/AddService';
 import MyBooking from './components/Home/MyBooking/MyBooking';
 import ADashBoard from './components/Home/AdminDashBoard/ADashBoard';
+import Home from './components/Home/Home/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <AuthProvider>
         <BrowserRouter>
+          <Header></Header>
           <Switch>
             <Route exact path="/">
-              <Header></Header>
-              <Banner></Banner>
-              <Services></Services>
+              <Home></Home>
             </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/detailes/:serviceId">
+            <PrivateRoute path="/detailes/:serviceId">
               <Detailes></Detailes>
-            </Route>
+            </PrivateRoute>
             <Route path="/addService">
               <AddService></AddService>
-
             </Route>
             <Route path="/myBooking">
               <MyBooking></MyBooking>
