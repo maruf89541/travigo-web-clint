@@ -43,7 +43,7 @@ const Detailes = () => {
                     <h3>{singleServiceDetailes?.name}</h3>
                     <p>{singleServiceDetailes?.description}</p>
                 </div>
-                <div className="col-lg-6 p-5 ">
+                <div className="col-lg-6 p-5  ">
                     <div className="add-service">
                         <h3 className="text-center">Add Your <span>Information</span></h3>
                         <form onSubmit={handleSubmit(onSubmit)}>
