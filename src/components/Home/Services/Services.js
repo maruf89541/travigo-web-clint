@@ -10,6 +10,7 @@ const Services = () => {
     }, [])
     return (
         <div className="container" >
+            <h1 className="text-center my-5">Our Most Popular<span style={{ color: "#ff7c5b" }} >Adventures</span></h1>
             <div className="row gy-3 " >
                 {
 

@@ -12,6 +12,7 @@ import AddService from './components/Home/AddService';
 import MyBooking from './components/Home/MyBooking/MyBooking';
 import ADashBoard from './components/Home/AdminDashBoard/ADashBoard';
 import Home from './components/Home/Home/Home';
+import Register from './components/Home/Ragister/Register';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route path="/aDashBoard">
               <ADashBoard></ADashBoard>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
             </Route>
           </Switch>
         </BrowserRouter>
